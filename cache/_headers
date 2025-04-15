@@ -1,0 +1,42 @@
+/index.html
+  Cache-Control: no-cache
+
+/webPushSdk.produce.min.2.1.6.js
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
+
+/version-polling.min.js
+  Cache-Control: public, max-age=0, must-revalidate
+  
+/version.js
+  ! Cache-Control
+  Cache-Control: no-cache
+
+/launch/*
+  Cache-Control: no-cache
+
+/main/*
+  Cache-Control: no-cache
+
+/assets/*
+  Cache-Control: public, max-age=86400, immutable
+
+
+/*.png
+  Cache-Control: public, max-age=14400
+
+/*.jpg
+  Cache-Control: public, max-age=14400
+
+/*.svg
+  Cache-Control: public, max-age=14400
+
+/*.gif
+  Cache-Control: public, max-age=14400
+
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS,PATCH
+  Access-Control-Allow-Credentials: true
+  Access-Control-Max-Age: 86400
