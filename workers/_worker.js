@@ -83,7 +83,7 @@ async function handleR2Request(r2Res) {
   const { env, ctx, request, config } = r2Res;
   const x_sTime = Date.now();
   const versionData = await getVersionedPath(r2Res);
-  const cacheUrl = await env.KV.get('r2Url') || await env.KV.get('apiUrl') || 'https://panda.cacheKeyfakedomain.cn';
+  const cacheUrl = await env.KV.get('r2Url') || await env.KV.get('apiUrl') || 'https://www.example.com';
 
   const cacheKey = `${cacheUrl}/${versionData.realPath}|${versionData.version}`;
   console.log('Cache Key:', cacheKey); // 输出cacheKey以便调试
